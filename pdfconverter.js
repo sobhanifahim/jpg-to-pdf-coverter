@@ -1,10 +1,13 @@
 var vis=document.getElementById("show");
 var pdf=document.getElementById("pdf");
 var text=document.getElementById("txt");
+var  download=document.getElementById("download");
 vis.style.visibility="hidden"
+download.style.visibility="hidden"
     function preview(){
         pdf.style.overflowY="auto";
         vis.style.visibility="visible";
+        download.style.visibility="visible";
         text.remove();
         var file=document.getElementById("file").files;
         if(file.length>0){
